@@ -6,7 +6,7 @@
 
 :root {
   --black: 15, 18, 25;
-  --gray: 96, 115, 159;
+  /* --gray: 96, 115, 159; */
   --gray-light: 229, 233, 240;
   --gray-dark: 34, 41, 57;
   --gray-gradient: rgba(var(--gray-light), 50%), #fff;
@@ -16,12 +16,14 @@
 
 html {
   --accent: var(--p-primary-color);
+  --gray: var(--gray-dark);
   background: #ffffff;
   color: var(--p-surface-900);
 }
 
 html.dark {
   --accent: var(--p-primary-400);
+  --gray: var(--gray-light);
   background: var(--p-surface-950);
   color: var(--p-surface-50);
 }
