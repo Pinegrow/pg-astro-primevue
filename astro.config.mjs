@@ -13,6 +13,7 @@ import vue from '@astrojs/vue'
 // import svelte from '@astrojs/svelte'
 import Pinegrow from '@pinegrow/astro-module'
 import AutoImportComponents from 'unplugin-vue-components/vite'
+import { PrimeVueResolver } from '@primevue/auto-import-resolver'
 import AutoImportAPIs from 'unplugin-auto-import/astro'
 import Unocss from 'unocss/vite'
 import presetIcons from '@unocss/preset-icons'
@@ -101,7 +102,7 @@ export default defineConfig({
         dirs: ['src/components'], // allow auto load markdown components under ./src/components/
         extensions: ['vue', 'md'], // allow auto import and register components used in markdown
         include: [/\.vue$/, /\.vue\?vue/, /\.md$/, /\.mdx?/],
-        // resolvers: [], // Auto-import using resolvers
+        resolvers: [PrimeVueResolver()], // Auto-import using resolvers
         dts: 'components.d.ts',
       }),
       Unocss({

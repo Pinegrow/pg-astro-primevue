@@ -1,6 +1,7 @@
 ---
 import HeaderLink from '@/components/HeaderLink.astro';
 import { SITE_TITLE } from '@/consts';
+import DarkModeSwitch from '@/components/DarkModeSwitch.vue';
 ---
 
 <header>
@@ -12,6 +13,7 @@ import { SITE_TITLE } from '@/consts';
 			<HeaderLink href="/about">About</HeaderLink>
 		</div>
 		<div class="social-links">
+      <DarkModeSwitch client:only="vue" style="padding: 0.8em 0.5em;"/>
 			<a href="https://m.webtoo.ls/@astro" target="_blank">
 				<span class="sr-only">Follow Astro on Mastodon</span>
 				<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
@@ -46,12 +48,13 @@ import { SITE_TITLE } from '@/consts';
 	header {
 		margin: 0;
 		padding: 0 1em;
-		background: white;
+		/* background: white; */
 		box-shadow: 0 2px 8px rgba(var(--black), 5%);
 	}
 	h2 {
 		margin: 0;
 		font-size: 1em;
+		/* color: var(--black); */
 	}
 
 	h2 a,

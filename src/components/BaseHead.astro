@@ -1,6 +1,7 @@
 ---
 import { fontUrls } from '@/utils/font'
 import '@/assets/css/global.css'
+import '@/assets/css/main.css'
 import 'prismjs/themes/prism-tomorrow.css'
 
 interface Props {
@@ -63,3 +64,13 @@ const {title, description, image = '/blog-placeholder-1.jpg'} = Astro.props
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+<script>
+  const prefersDark = matchMedia("(prefers-color-scheme: dark)").matches;
+  const setting = localStorage.getItem("vueuse-color-scheme") || "auto";
+  const isInitiallyDarkMode = !!(
+    setting === "dark" ||
+    (prefersDark && setting !== "light")
+  );
+  if (isInitiallyDarkMode)
+    document.documentElement.classList.toggle("dark", true);
+</script>
