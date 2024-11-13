@@ -1,6 +1,7 @@
 import rss from '@astrojs/rss'
 import { getCollection } from 'astro:content'
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
+import site from '@/site'
+const { name: SITE_TITLE, description: SITE_DESCRIPTION } = site
 
 export async function get(context) {
   const posts = await getCollection('blog')

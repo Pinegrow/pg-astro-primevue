@@ -18,8 +18,23 @@ export default {
   trailingSlash: false, // default
   titleSeparator: '|', // default
   nav: [
-    { text: 'Home', link: '/' },
-    { text: 'Blog', link: '/blog' },
-    { text: 'About', link: '/about' },
+    {
+      text: 'Home',
+      link: '/',
+      type: 'primary',
+      icon: 'i-mdi-home',
+    },
+    {
+      text: 'Quick Start',
+      link: '/quick-start/index',
+      type: 'primary',
+      icon: 'i-mdi-home',
+    },
+    {
+      text: 'Subscribe',
+      link: '/subscribe',
+      type: 'secondary',
+      icon: 'i-mdi-home',
+    },
   ],
 }

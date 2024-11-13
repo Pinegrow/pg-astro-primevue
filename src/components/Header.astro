@@ -1,7 +1,8 @@
 ---
 import HeaderLink from '@/components/HeaderLink.astro';
-import { SITE_TITLE } from '@/consts';
 import DarkModeSwitch from '@/components/DarkModeSwitch.vue';
+import site from '@/site'
+const {name: SITE_TITLE} = site
 ---
 
 <header>
