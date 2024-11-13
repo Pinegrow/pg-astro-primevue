@@ -1,16 +1,16 @@
 {
-  "name": "pg-astro",
+  "name": "pg-astro-primevue",
   "type": "module",
   "version": "0.0.1",
-  "homepage": "https://pg-astro-css.netlify.app",
+  "homepage": "https://pg-astro-primevue.netlify.app",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pinegrow/pg-astro.git"
+    "url": "https://github.com/pinegrow/pg-astro-primevue.git"
   },
   "scripts": {
     "dev": "astro dev",
     "now": "npm run build && npm run preview",
-    "lighthouse": "npx unlighthouse --site https://pg-astro-css.netlify.app",
+    "lighthouse": "npx unlighthouse --site https://pg-astro-primevue.netlify.app",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",

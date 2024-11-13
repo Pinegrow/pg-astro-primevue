@@ -1,8 +1,8 @@
-# Vue Designer Astro with CSS - Quick start template
+# Vue Designer Astro PrimeVue - Quick start template
 
-This is a starter template that pre-includes the [Pinegrow Astro Module](https://www.npmjs.com/package/@pinegrow/astro-module) and other goodies for Vue Designer.
+This is a starter template that pre-includes the [Pinegrow Astro Module](https://www.npmjs.com/package/@pinegrow/astro-module), [PrimeVue](https://primevue.org/introduction/), [Pinegrow PrimeVue Plugin](https://www.npmjs.com/package/@pinegrow/primevue-plugin) and other goodies for Vue Designer.
 
-Demo - https://pg-astro-css.netlify.app/
+Demo - https://pg-astro-primevue.netlify.app/
 
 ## Vue Designer
 
@@ -18,15 +18,15 @@ Clean code 😃, No lock-in - You are in control of your projects and developmen
 
 ### 1. Clone to local
 
-[Create a repo from this template on GitHub](https://github.com/pinegrow/pg-astro/generate).
+[Create a repo from this template on GitHub](https://github.com/pinegrow/pg-astro-primevue/generate).
 
 (or)
 
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx giget@latest gh:pinegrow/pg-astro my-astro-app #project-name
-cd my-astro-app
+npx giget@latest gh:pinegrow/pg-astro-primevue my-astro-primevue-app #project-name
+cd my-astro-primevue-app
 npm install #or use pnpm
 ```
 
@@ -35,8 +35,8 @@ npm install #or use pnpm
 If you prefer a minimal template (a single empty home page) instead,
 
 ```bash
-npx giget@latest gh:pinegrow/pg-astro#minimal my-astro-app #project-name
-cd my-astro-app
+npx giget@latest gh:pinegrow/pg-astro-primevue#minimal my-astro-primevue-app #project-name
+cd my-astro-primevue-app
 npm install #or use pnpm
 ```
 
@@ -81,7 +81,7 @@ npm run unlighthouse # Uses npx unlighthouse from https://unlighthouse.dev/ to r
 ### Deploy to Netlify
 
 You can deploy this repo as a site on your own to explore and experiment with, by clicking this button.
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Pinegrow/pg-astro)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Pinegrow/pg-astro-primevue)
 
 Check out the [deployment documentation](https://docs.astro.build/en/guides/deploy) for more information.
 
@@ -99,7 +99,7 @@ Check out the [deployment documentation](https://docs.astro.build/en/guides/depl
 
 ### UI Frameworks
 
-- [CSS](https://vuejs.org/api/sfc-css-features.html) - Scoped CSS in Vue Single File Component (SFC).
+- [PrimeVue](https://primevue.org/introduction/) - PrimeVue is a complete UI suite for Vue.js consisting of a rich set of UI components, icons, blocks, and application templates.
 
 ### Icons
 
@@ -108,6 +108,7 @@ Check out the [deployment documentation](https://docs.astro.build/en/guides/depl
 ### Modules/Plugins
 
 - [Pinegrow Astro Module](https://www.npmjs.com/package/@pinegrow/astro-module) - enables you to live-design your Vue single-file components visually in Vue Designer.
+- [Pinegrow Primevue Plugin](https://www.npmjs.com/package/@pinegrow/primevue-plugin) - via Design Panel, enables theme customization (optional) and visual controls for Primevue utilities. Note: This is an addon that's licensed separately to Pinegrow apps (like Vue Designer).
 - 📲 [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) - On-demand components auto importing for Vue.
 - 📲 [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) - Auto import APIs on-demand for Vite, Webpack and Rollup.
 - [VueUse](https://vueuse.org/) - collection of essential Vue composition utilities.

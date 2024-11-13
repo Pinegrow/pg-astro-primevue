@@ -9,7 +9,7 @@
     <p>
       This is a simple template
       <a
-        href="https://github.com/pinegrow/pg-vue"
+        href="https://github.com/pinegrow/pg-astro-primevue"
         target="_blank"
         rel="noopener"
         ><BaseIcon
@@ -27,6 +27,12 @@
         target="_blank"
         rel="noopener"
         >Pinegrow Astro Module</a
+      >,
+      <a
+        href="https://www.npmjs.com/package/@pinegrow/primevue-plugin"
+        target="_blank"
+        rel="noopener"
+        >Pinegrow PrimeVue Plugin</a
       >
       and other goodies for your drag & drop experience.
     </p>

@@ -4,12 +4,12 @@
 
 export default {
   name: 'Vue Designer',
-  description: 'Vue Designer Astro CSS - Quick start template',
+  description: 'Vue Designer Astro PrimeVue - Quick start template',
   // logo: 'i-emojione-rocket',
   logo: 'i-vscode-icons:file-type-coffeelint',
   author: 'Pinegrow',
-  url: 'https://pg-astro-css.netlify.app',
-  github: 'https://github.com/pinegrow/pg-astro',
+  url: 'https://pg-astro-primevue.netlify.app',
+  github: 'https://github.com/pinegrow/pg-astro-primevue',
   defaultLocale: 'en', // default
   identity: {
     type: 'Organization',
