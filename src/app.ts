@@ -1,7 +1,4 @@
 import 'uno.css'
-// import 'primevue/resources/primevue.min.css'
-// import 'primeicons/primeicons.css'
-// import 'primevue/resources/themes/lara-light-teal/theme.css'
 
 import type { App } from 'vue'
 import pinia from '@/plugins/pinia'

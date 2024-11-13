@@ -1,9 +1,14 @@
 ---
 import Layout from '@/layouts/Layout.astro'
-import HeroSection from "@/components/HeroSection.vue";
+import PageHome from '@/components/PageHome.vue'
+import DarkModeSwitch from '@/components/DarkModeSwitch.vue'
+
 ---
 
 <Layout title="Home">
-<HeroSection client:load/>  
+  <PageHome client:load>
+    <DarkModeSwitch client:only="vue" />
+   </PageHome>
 </Layout>
+
 <style></style>
