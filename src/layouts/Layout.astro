@@ -3,7 +3,10 @@ import BaseHead from '@/components/BaseHead.astro'
 
 import Header from '@/components/Header.astro'
 import Footer from '@/components/Footer.astro'
-import {SITE_TITLE, SITE_DESCRIPTION} from '@/consts'
+import site from '@/site'
+import { heroImageUrl } from "@/utils/hero";
+
+const {name: SITE_TITLE, description: SITE_DESCRIPTION} = site
 
 export interface Props {
   title: string
@@ -18,7 +21,7 @@ const currentPath = Astro.url.pathname
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <BaseHead title={title || SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title={title || SITE_TITLE} description={SITE_DESCRIPTION} image={heroImageUrl} />
   </head>
   <body>
     <Header title={SITE_TITLE} />
