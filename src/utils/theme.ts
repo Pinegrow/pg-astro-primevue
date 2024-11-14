@@ -9,7 +9,7 @@ import {
 
 // Customize light and dark themes
 // https://primevue.org/theming/styled/
-const myTheme = definePreset(Aura, {
+const myPreset = definePreset(Aura, {
   darkModeSelector: '.dark',
   semantic: {
     primary: pg_colors.primary,
@@ -50,4 +50,4 @@ const myTheme = definePreset(Aura, {
   },
 })
 
-export { myTheme }
+export { myPreset }
