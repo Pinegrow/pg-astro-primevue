@@ -81,6 +81,14 @@ export default defineConfig({
     Pinegrow({
       liveDesigner: {
         iconPreferredCase: 'unocss', // default value (can be removed), unocss by default uses the unocss format for icon names
+        primevue: {
+          /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
+          configPath: 'primevue.config.ts', // or file where primevue is created
+          // themePath: false, // Set to false so that Design Panel is not used
+          // utilities: false,
+          // restartOnConfigUpdate: true,
+          restartOnThemeUpdate: true,
+        },
         // plugins: [
         //   {
         //     name: 'My Awesome Lib 3.0',
