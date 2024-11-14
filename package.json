@@ -51,6 +51,7 @@
     "@iconify/json": "^2.2.269",
     "@nuxt/eslint-config": "^0.6.1",
     "@pinegrow/astro-module": "^3.0.60",
+    "@pinegrow/primevue-plugin": "^3.0.2-beta.0",
     "@primevue/auto-import-resolver": "^4.2.1",
     "@types/node": "^22.9.0",
     "@unocss/preset-icons": "^0.64.0",
