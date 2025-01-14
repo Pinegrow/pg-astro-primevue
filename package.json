@@ -71,5 +71,8 @@
     "unplugin-vue-components": "^28.0.0",
     "vue-tsc": "^2.2"
   },
+  "overrides": {
+    "@sveltejs/vite-plugin-svelte": "^4"
+  },
   "web-types": "web-types.json"
 }
