@@ -131,6 +131,10 @@ export default defineConfig({
       }),
     ],
 
+    ssr: {
+      noExternal: ['primevue'],
+    },
+
     // build: {
     //   // Vite uses Rollup under the hold, so rollup options & plugins can be used for advanced usage
     //   rollupOptions: {
