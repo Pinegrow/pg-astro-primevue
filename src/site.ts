@@ -5,11 +5,12 @@
 export default {
   title: 'Vue Designer',
   description: 'Vue Designer Astro PrimeVue - Quick start template',
-  // logo: 'i-emojione-rocket',
-  logo: 'i-vscode-icons:file-type-coffeelint',
+  logo: 'i-emojione-rocket',
   author: 'Pinegrow',
   url: 'https://pg-astro-primevue.netlify.app',
   github: 'https://github.com/pinegrow/pg-astro-primevue',
+  ogImageUrl: 'og-image.jpg', // absolute url (or) from public folder
+  generator: 'https://vuedesigner.com',
   defaultLocale: 'en', // default
   identity: {
     type: 'Organization',

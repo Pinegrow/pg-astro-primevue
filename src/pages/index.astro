@@ -2,13 +2,12 @@
 import Layout from '@/layouts/Layout.astro'
 import PageHome from '@/components/PageHome.vue'
 import DarkModeSwitch from '@/components/DarkModeSwitch.vue'
-
 ---
 
 <Layout title="Home">
   <PageHome client:load>
-    <DarkModeSwitch client:only="vue" />
-   </PageHome>
+    <DarkModeSwitch client:load />
+  </PageHome>
 </Layout>
 
 <style></style>
