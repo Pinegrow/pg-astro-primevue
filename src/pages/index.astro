@@ -1,9 +1,11 @@
 ---
 import Layout from '@/layouts/Layout.astro'
-import HeroSection from '@/components/HeroSection.vue'
+import PageHome from '@/components/PageHome.vue'
+
+const title = 'Home'
 ---
 
-<Layout title="Home">
-  <HeroSection client:load />
+<Layout {title}>
+  <PageHome client:load />
 </Layout>
 <style></style>
